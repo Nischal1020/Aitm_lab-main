@@ -1,2 +1,8 @@
-# Aitm_lab-main
-AITM lab repository 
+Topic for project
+
+- smart Traffic light system 
+
+- smart security system
+
+- Analyzing food quality
+
