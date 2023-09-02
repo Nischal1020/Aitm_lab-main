@@ -15,13 +15,14 @@ a:hover {
 	color: #0FF;
 }
 
-/* start h2 */
-h2
-	{
-		text-align: center;
-		font-size: 40px;
-		padding-bottom: 40px;
-	}	
+/* CSS for <h2> */
+h2 {
+    text-align: center;
+    font-size: 40px;
+	padding-bottom: 40px;
+}
+
+	
 h2 span
 	{
 		color: #28a7e9;
