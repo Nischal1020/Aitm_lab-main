@@ -5,7 +5,7 @@ try:
     server.starttls()
 
     # Use your App Password here
-    server.login('cpboys11@gmail.com', 'Cpboys12345')
+    server.login('cpboys11@gmail.com', 'msrd webk ezdi eiwu')
 
     server.sendmail('cpboys11@gmail.com', 'technicalnazwa@gmail.com', 'this is a fake mail')
     print('Mail sent successfully')
