@@ -8,3 +8,8 @@ pass - Cpboys12345
 
 
 git linkmail - https://github.com/The-Intrigued-Engineer/python_emails/blob/main/text_email.py
+
+
+
+
+video link - https://youtu.be/Sddnn6dpqk0
