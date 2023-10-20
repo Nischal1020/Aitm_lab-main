@@ -1,17 +1,42 @@
 import smtplib
+import ssl
+
+# Setup port number and servr name
+
+smtp_port = 587  # Standard secure SMTP port
+smtp_server = "smtp.gmail.com"  # Google SMTP Server
+
+email_from = "cpboys11@gmail.com"
+email_to = "technicalnazwa@gmail.com"
+
+pswd = "msrdwebkezdieiwu"
+
+# content of message
+
+message = "Dear god, please help!!!"
+
+# Create context
+simple_email_context = ssl.create_default_context()
 
 try:
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.starttls()
+    # Connect to the server
+    print("Connecting to server...")
+    TIE_server = smtplib.SMTP(smtp_server, smtp_port)
+    TIE_server.starttls(context=simple_email_context)
+    TIE_server.login(email_from, pswd)
+    print("Connected to server :-)")
 
-    # Use your App Password here
-    server.login('cpboys11@gmail.com', 'msrd webk ezdi eiwu')
+    # Send the actual email
+    print()
+    print(f"Sending email to - {email_to}")
+    TIE_server.sendmail(email_from, email_to, message)
+    print(f"Email successfully sent to - {email_to}")
 
-    server.sendmail('cpboys11@gmail.com', 'technicalnazwa@gmail.com', 'this is a fake mail')
-    print('Mail sent successfully')
-
+# If there's an error, print it out
 except Exception as e:
-    print('An error occurred:', str(e))
+    print(e)
 
+# Close the port
 finally:
-    server.quit()
+    TIE_server.quit()
+    print("work done!!")
