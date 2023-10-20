@@ -12,4 +12,9 @@ git linkmail - https://github.com/The-Intrigued-Engineer/python_emails/blob/main
 
 
 
-video link - https://youtu.be/Sddnn6dpqk0
+video link to send mail  - https://youtu.be/Sddnn6dpqk0
+
+
+To send mail with folder/image we do
+
+
