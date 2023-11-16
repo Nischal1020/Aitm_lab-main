@@ -36,7 +36,7 @@ class RandomNumberGenerator:
         while True:
             random_numbers = [random.randint(0, 9) for _ in range(4)]
             if tuple(random_numbers) not in self.name:
-                print("Generated random numbers:", random_numbers)
+                print("your file name is:", random_numbers)
                 self.save_generated_numbers(random_numbers)
                 break
 
